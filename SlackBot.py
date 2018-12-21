@@ -27,8 +27,13 @@ sc = SlackClient(slack_token)
 # 메인페이지 함수
 @app.route("/", methods=["GET"])
 def index():
-    # NOT READY ㅎㅅㅎ
-    return "<h1>Server is ready.</h1>"
+    result1 = request.args.get('value')
+    result2 = [
+        ['이재현', 99, 88, 46, 87, 53],
+        ['John Doe', 83, 32, 63, 45, 65],
+        ['Jane Doe', 96, 34, 64, 67, 85]
+    ]
+    return render_template('index.html', result1=result1, result2=result2)
 
 
 def dummy():
