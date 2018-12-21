@@ -27,7 +27,12 @@ sc = SlackClient(slack_token)
 # 메인페이지 함수
 @app.route("/", methods=["GET"])
 def index():
+    # NOT READY ㅎㅅㅎ
     return "<h1>Server is ready.</h1>"
+
+
+def dummy():
+    return None
 
 
 # 사용자의 입력에 대한 분석 결과를 return하는 함수.
