@@ -38,7 +38,6 @@ def dummy():
 def fuckoff():
     return "FUUUUUUUUUUUUUK"
 
-
 # 사용자의 입력에 대한 분석 결과를 return하는 함수.
 # DialogFlow를 통해 사용자의 입력에 대응하는 Intent와 Speech를 return.
 def get_answer(text, user_key):
